@@ -17,6 +17,7 @@
         <module>a-spring-boot-basis</module>
         <module>b-spring-boot-autoconfig</module>
         <module>c-spring-boot-web</module>
+        <module>d-spring-boot-aop</module>
     </modules>
 
     <dependencyManagement>
@@ -34,6 +35,11 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
         </dependencies>
