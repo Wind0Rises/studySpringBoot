@@ -18,6 +18,7 @@
         <module>b-spring-boot-autoconfig</module>
         <module>c-spring-boot-web</module>
         <module>d-spring-boot-aop</module>
+        <module>e-spring-boot-enable</module>
     </modules>
 
     <dependencyManagement>
