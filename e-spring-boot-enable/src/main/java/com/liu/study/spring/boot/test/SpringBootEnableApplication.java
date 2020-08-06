@@ -23,6 +23,9 @@ import org.springframework.context.ApplicationContext;
  * 如何做到自动注入：
  *      需要在MATE-INF目录下新建spring.factories文件，并配置org.springframework.boot.autoconfigure.EnableAutoConfiguration=
  *      com.liu.study.spring.boot.enable.config.EnableCustomConfiguration。指向自己的配置类，这个配置类相当于一个对应的xml文件。
+ *
+ * 启动的时候在SpringApplication中会加载MATE-INF/spring.factories文件，加载配置类，然后会加载MATE-INF/spring-autoconfigure-metadata.properties
+ * 中的配置文件。
  */
 // @EnableCustomAnnotation
 public class SpringBootEnableApplication {

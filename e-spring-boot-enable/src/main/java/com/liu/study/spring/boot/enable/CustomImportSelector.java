@@ -13,6 +13,9 @@ public class CustomImportSelector implements ImportSelector {
 
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
+        /**
+         * 可以自定义规则来加载满足规则的类，比如SPI。
+         */
         return new String[]{"com.liu.study.spring.boot.enable.injected.UserService"};
     }
 

@@ -17,6 +17,9 @@ public class CustomImportBeanDefinitionRegistrar implements ImportBeanDefinition
 
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
+        /**
+         * 可以自定义规则来加载满足规则的类，比如SPI。
+         */
         RootBeanDefinition rootBeanDefinition = new RootBeanDefinition(MerchantService.class);
         String name = StringUtils.uncapitalize(MerchantService.class.getName());
         System.out.println(name);
